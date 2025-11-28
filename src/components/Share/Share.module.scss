@@ -1,0 +1,65 @@
+.share {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) translateY(-25px);
+  bottom: 100%;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 36px;
+  border-radius: 10px;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.triangle {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background: hsl(217, 19%, 35%);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.shareText {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  user-select: none;
+}
+
+.text {
+  text-transform: uppercase;
+  letter-spacing: 4.9px;
+  font-size: 0.813rem;
+  color: hsl(210, 46%, 95%);
+  cursor: default;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

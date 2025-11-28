@@ -1,0 +1,61 @@
+.share {
+  box-sizing: border-box;
+  position: absolute;
+  width: calc(100% + 4rem);
+  bottom: -1.3rem;
+  left: -2rem;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 0px 0px 8px 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.063rem 2rem 1.53rem 2rem;
+}
+
+.shareText {
+  display: flex;
+  align-items: center;
+  gap: 1.313rem;
+}
+
+.text {
+  text-transform: uppercase;
+  color: hsl(210, 46%, 95%);
+  font-size: 0.813rem;
+  letter-spacing: 4.9px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shareIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  position: relative;
+
+  & svg {
+    fill: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+  }
+}
